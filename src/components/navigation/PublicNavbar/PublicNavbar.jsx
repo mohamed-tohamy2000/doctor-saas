@@ -4,7 +4,7 @@ import { PublicNavbarLinks } from "./PublicNavbarLinks";
 
 export default function PublicNavbar() {
   return (
-    <header className="text-black flex items-center justify-between mx-6 py-4">
+    <header className="text-black flex items-center justify-between">
       <h1 className="font-bold text-[20px] text-[#00685F] ">Smart Booking</h1>
       <PublicNavbarLinks />
       <div className="flex gap-4 items-center justify-center">

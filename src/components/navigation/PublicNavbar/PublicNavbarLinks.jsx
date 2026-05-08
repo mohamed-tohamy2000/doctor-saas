@@ -4,7 +4,6 @@ export const PublicNavbarLinks = () => {
   const links = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Specialties", path: "/specialties" },
     { name: "Contact", path: "/contact" },
     { name: "FAQ", path: "/faq" },
   ];
