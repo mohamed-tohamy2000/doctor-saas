@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
+@plugin "daisyui/index.js";
 
-* {
-    font-family: "Rubik", sans-serif;
+* {font-family: "Rubik", sans-serif;}
+
+@theme {
+  --color-primary: #00685F;
+  --color-primary-content: #ffffff;
+  --color-base-100: #ffffff;
+  --color-base-200: #f9fafb;
+  --color-heading: #00685F;
+  /* Matching primary color for headings */
+}
+
+
+@layer base {
+
+  :root,
+  [data-theme="light"] {
+    --color-primary: #00685F;
+    --color-base-100: #ffffff;
+    --color-base-200: #f9fafb;
+  }
+
+  body {
+    @apply bg-base-100 text-slate-600 min-h-screen font-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading font-bold;
+  }
 }
