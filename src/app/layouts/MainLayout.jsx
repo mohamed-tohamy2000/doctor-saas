@@ -8,7 +8,7 @@ export default function MainLayout() {
         <PublicNavbar />
 
         {/* Content */}
-        <div className="flex-1 overflow-auto scroll-smooth">
+        <div className="flex-1 bg-white overflow-auto">
           <Outlet />
         </div>
       </div>

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 @plugin "daisyui/index.js";
-
-* {font-family: "Rubik", sans-serif;}
 
 @theme {
   --color-primary: #00685F;
@@ -10,17 +7,34 @@
   --color-base-100: #ffffff;
   --color-base-200: #f9fafb;
   --color-heading: #00685F;
-  /* Matching primary color for headings */
+
 }
 
 
 @layer base {
 
-  :root,
-  [data-theme="light"] {
+  :root {
+    color-scheme: light !important;
     --color-primary: #00685F;
     --color-base-100: #ffffff;
-    --color-base-200: #f9fafb;
+    --color-base-200: #f8fafc;
+    --color-heading: #00685F;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: light !important;
+      --color-base-100: #ffffff !important;
+      --color-base-200: #f8fafc !important;
+      --color-primary: #00685F !important;
+      --color-heading: #00685F !important;
+    }
+
+    body {
+      background-color: #ffffff !important;
+      color: #475569 !important;
+    }
   }
 
   body {
