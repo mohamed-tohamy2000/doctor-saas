@@ -5,13 +5,13 @@ import { Star } from 'lucide-react'
 export default function Carttow({doctors}) {
  
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
       {doctors.map((doctor) => (
         <div
           key={doctor.name}
           className='overflow-hidden rounded-2xl border border-[#BCC9C6] bg-[#F8FBFA]'
         >
-          <div className='relative h-[192px] overflow-hidden'>
+          <div className='relative h-48 overflow-hidden'>
             <img
               src={doctor.image}
               alt={doctor.name}
@@ -28,7 +28,7 @@ export default function Carttow({doctors}) {
               <h2 className='text-[20px] font-semibold text-[#171D1C]'>{doctor.name}</h2>
               <p className='text-sm font-semibold text-[#00685F]'>{doctor.specialty}</p>
             </div>
-            <p className='min-h-[44px] text-sm font-normal text-[#3D4947]'>
+            <p className='min-h-11 text-sm font-normal text-[#3D4947]'>
               {doctor.description}
             </p>
             <button className='w-full rounded border border-[#BCC9C6] bg-white px-4 py-2 text-sm font-semibold text-[#00685F]'>
