@@ -27,7 +27,7 @@ export default function AboutHero({ title, description, image }) {
                 <img
                     src={image}
                     alt="Clinic"
-                    className="rounded-3xl shadow-2xl w-full h-[400px] object-cover"
+                    className="rounded-3xl shadow-2xl w-full h-100 object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10"></div>
             </motion.div>
