@@ -1,6 +1,7 @@
 import { BadgeCheck, Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
 import Button from "../components/ui/Button/Button";
 import img from "../assets/ContactPage/sss.png";
+import InputSempil from "../components/ui/Input/InputSempil";
 
 export default function ContactPage() {
   return (
@@ -30,30 +31,18 @@ export default function ContactPage() {
           <div className="flex gap-8">
             <form className="flex flex-col gap-6 w-full">
               <div className="grid grid-cols-2 w-186.25 gap-3">
-                <div className="flex flex-col">
-                  <span className=" text-black">Full Name</span>
-                  <input
-                    type="text"
-                    className="border bg-[#F0F5F2] rounded-lg h-10 placeholder:p-2 placeholder:text-[#6e6e6e88] border-[#BCC9C6]"
-                    placeholder="Ahmed aly"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <span className=" text-black">Email</span>
-                  <input
-                    type="email"
-                    className="border bg-[#F0F5F2] rounded-lg h-10 placeholder:p-2 placeholder:text-[#6e6e6e88] border-[#BCC9C6]"
-                    placeholder="export@smartclinic.com"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className=" text-black">subject</span>
-                <input
-                  type="url"
-                  className="border bg-[#F0F5F2] rounded-lg h-10 placeholder:p-2 placeholder:text-[#6e6e6e88] border-[#BCC9C6]"
+                <InputSempil
+                  text="Full Name"
+                  type="text"
+                  placeholder="John saimen"
+                />
+                <InputSempil
+                  text="Email"
+                  type="email"
+                  placeholder="exampil@gmail.com"
                 />
               </div>
+              <InputSempil text="subject" type={""} placeholder="subject" />
               <div className="flex flex-col">
                 <span className=" text-black">Message</span>
                 <textarea
