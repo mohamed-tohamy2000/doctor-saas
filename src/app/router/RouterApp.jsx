@@ -4,6 +4,8 @@ import ContactPage from "../../pages/ContactPage";
 import Faq from "../../pages/Faq";
 import Home from "../../pages/Home";
 import AboutUs from "../../pages/AboutUs";
+import ForgotPassword from "../../modules/auth/pages/ForgotPassword";
+import ResetPassword from "../../modules/auth/pages/ResetPassword";
 
 export default function RouterApp() {
   return (
@@ -15,6 +17,8 @@ export default function RouterApp() {
           <Route path="faq" element={<Faq />} />
           <Route path="about" element={<AboutUs />} />
         </Route>
+          <Route path="ForgotPassword" element={<ForgotPassword/>} />
+          <Route path="ResetPassword" element={<ResetPassword/>} />
       </Routes>
     </>
   );
