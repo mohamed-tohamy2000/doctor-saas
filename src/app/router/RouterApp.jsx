@@ -1,14 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
-import ContactPage from "../../pages/ContactPage";
+import ContactPage from"../../pages/ContactPage";
 import Faq from "../../pages/Faq";
 import Home from "../../pages/Home";
 import AboutUs from "../../pages/AboutUs";
+import Registerpage from "../../modules/auth/pages/Registerpage";
 
 export default function RouterApp() {
   return (
     <>
       <Routes>
+        <Route path="/register" element={<Registerpage />} />
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<ContactPage />} />
