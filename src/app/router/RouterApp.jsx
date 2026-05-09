@@ -4,11 +4,17 @@ import ContactPage from "../../pages/ContactPage";
 import Faq from "../../pages/Faq";
 import Home from "../../pages/Home";
 import AboutUs from "../../pages/AboutUs";
+import LoginPage from "../../modules/auth/pages/LoginPage";
 
 export default function RouterApp() {
   return (
     <>
       <Routes>
+        {/* Login Route */}
+        <Route>
+        <Route path="/login" element={<LoginPage />} />
+        </Route>
+
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<ContactPage />} />
