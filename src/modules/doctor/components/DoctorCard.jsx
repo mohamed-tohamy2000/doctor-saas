@@ -15,7 +15,7 @@ export default function DoctorCard({ doctor }) {
 
   return (
     <div className="bg-[#F5FAF8] rounded-2xl border border-[#D1E1DB] p-5 relative flex flex-col h-full shadow-sm hover:shadow-md transition-all">
-      {/* Availability Badge */}
+
       {availableToday && (
         <div className="absolute top-0 right-0">
           <div className="bg-[#D1E8E2] text-[#00685F] text-[10px] font-bold px-3 py-1.5 rounded-tr-2xl rounded-bl-xl uppercase tracking-wide">
@@ -24,7 +24,6 @@ export default function DoctorCard({ doctor }) {
         </div>
       )}
 
-      {/* Header Section: Image & Info */}
       <div className="flex gap-4 mb-6 mt-2">
         <img
           src={image}
@@ -42,7 +41,6 @@ export default function DoctorCard({ doctor }) {
         </div>
       </div>
 
-      {/* Stats Section in a Box */}
       <div className="bg-[#F5FAF8] border border-[#D1E1DB] rounded-xl p-4 flex items-center justify-between mb-8">
         <div className="flex-1 text-center border-r border-[#D1E1DB]">
           <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mb-0.5">Experience</p>
@@ -54,7 +52,6 @@ export default function DoctorCard({ doctor }) {
         </div>
       </div>
 
-      {/* Action Buttons */}
       <div className="mt-auto">
         {availableToday ? (
           <button className="w-full bg-[#00685F] hover:bg-[#005a52] text-white rounded-xl py-3 flex items-center justify-center gap-4 font-bold transition-all shadow-lg shadow-[#00685f2a]">

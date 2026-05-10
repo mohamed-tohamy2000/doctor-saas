@@ -6,7 +6,6 @@ export default function FilterBar() {
 
   return (
     <div className="bg-[#F5FAF8] border border-[#D1E1DB] rounded-xl p-4 flex flex-wrap gap-10 items-center mb-10">
-      {/* Specialty Filter */}
       <div className="flex items-center gap-3 relative">
         <span className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Specialty:</span>
         <div className="relative">
@@ -17,7 +16,6 @@ export default function FilterBar() {
         </div>
       </div>
 
-      {/* Availability Filter */}
       <div className="flex items-center gap-3 relative">
         <span className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Availability:</span>
         <div className="relative">
