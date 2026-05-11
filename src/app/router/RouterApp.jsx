@@ -4,6 +4,7 @@ import ContactPage from "../../pages/ContactPage";
 import Faq from "../../pages/Faq";
 import Home from "../../pages/Home";
 import AboutUs from "../../pages/AboutUs";
+import Dashboard from "@/modules/doctor/pages/Dashboard";
 
 export default function RouterApp() {
   return (
@@ -15,6 +16,8 @@ export default function RouterApp() {
           <Route path="faq" element={<Faq />} />
           <Route path="about" element={<AboutUs />} />
         </Route>
+          <Route path="DashboardDoctor" element={<Dashboard />} />
+        
       </Routes>
     </>
   );
