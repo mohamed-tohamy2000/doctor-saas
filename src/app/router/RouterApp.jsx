@@ -12,6 +12,8 @@ import DoctorDirectory from "../../modules/doctor/pages/DoctorDirectory";
 import ErrorPage from "../../modules/errors/pages/ErrorPage";
 import Dashboard from "@/modules/doctor/pages/Dashboard";
 import DoctorAppointments from "../../modules/doctor/pages/DoctorAppointments";
+import DoctorLayout from "../layouts/DoctorLayout";
+
 
 export default function RouterApp() {
   return (
@@ -31,9 +33,12 @@ export default function RouterApp() {
       </Route>
 
       {/* Doctor */}
-      <Route path="/doctors" element={<DoctorDirectory />} />
-      <Route path="/doctor/dashboard" element={<Dashboard />} />
-      <Route path="/doctor/appointments" element={<DoctorAppointments />} />
+      <Route path="dashboard" element={<DoctorLayout />}>
+      <Route index element={<Dashboard/>}/>
+        <Route path="directory" element={<DoctorDirectory />} />
+      
+      <Route path="appointments" element={<DoctorAppointments />} />
+      </Route>
 
       {/* Error */}
       <Route path="*" element={<ErrorPage />} />
