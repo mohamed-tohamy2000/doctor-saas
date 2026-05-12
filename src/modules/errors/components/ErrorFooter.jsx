@@ -16,7 +16,7 @@ export default function ErrorFooter() {
         </p>
         <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
           {footerLinks.map((link) => (
-            <Link key={link.label} to={link.to} className="transition hover:text-[#00685F]">
+            <Link key={link.label} to={link.to} className="transition hover:text-heading">
               {link.label}
             </Link>
           ))}

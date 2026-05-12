@@ -10,6 +10,7 @@ import ForgotPassword from "../../modules/auth/pages/ForgotPassword";
 import ResetPassword from "../../modules/auth/pages/ResetPassword";
 import DoctorDirectory from "../../modules/doctor/pages/DoctorDirectory";
 import ErrorPage from "../../modules/errors/pages/ErrorPage";
+import Dashboard from "@/modules/doctor/pages/Dashboard";
 
 export default function RouterApp() {
   return (
@@ -32,6 +33,8 @@ export default function RouterApp() {
           <Route path="ResetPassword" element={<ResetPassword/>} />
         <Route path="doctors" element={<DoctorDirectory />} />
         <Route path="*" element={<ErrorPage />} />
+          <Route path="DashboardDoctor" element={<Dashboard />} />
+        
       </Routes>
     </>
   );
