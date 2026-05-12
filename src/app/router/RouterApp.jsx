@@ -11,31 +11,37 @@ import ResetPassword from "../../modules/auth/pages/ResetPassword";
 import DoctorDirectory from "../../modules/doctor/pages/DoctorDirectory";
 import ErrorPage from "@/modules/errors/pages/ErrorPage";
 import Dashboard from "@/modules/doctor/pages/Dashboard";
+import DoctorAppointments from "../../modules/doctor/pages/DoctorAppointments";
+import DoctorLayout from "../layouts/DoctorLayout";
+
 
 export default function RouterApp() {
   return (
-    <>
-      <Routes>
-        {/* Login Route */}
-        <Route>
-          <Route path="/login" element={<LoginPage />} />
-        </Route>
+    <Routes>
+      {/* Auth */}
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/register" element={<Registerpage />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
 
-        <Route path="/register" element={<Registerpage />} />
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="faq" element={<Faq />} />
-          <Route path="about" element={<AboutUs />} />
-          
-        </Route>
-          <Route path="ForgotPassword" element={<ForgotPassword/>} />
-          <Route path="ResetPassword" element={<ResetPassword/>} />
-        <Route path="doctors" element={<DoctorDirectory />} />
-        <Route path="*" element={<ErrorPage />} />
-          <Route path="DashboardDoctor" element={<Dashboard />} />
-        
-      </Routes>
-    </>
+      {/* Public */}
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="faq" element={<Faq />} />
+        <Route path="about" element={<AboutUs />} />
+      </Route>
+
+      {/* Doctor */}
+      <Route path="dashboard" element={<DoctorLayout />}>
+      <Route index element={<Dashboard/>}/>
+        <Route path="directory" element={<DoctorDirectory />} />
+      
+      <Route path="appointments" element={<DoctorAppointments />} />
+      </Route>
+
+      {/* Error */}
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }

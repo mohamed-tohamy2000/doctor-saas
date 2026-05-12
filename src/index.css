@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
 
 @custom-variant dark (&:is(.dark *));
@@ -35,7 +34,7 @@
     }
 
     body {
-      background-color: #ffffff !important;
+      background-color: #F5FAF8 !important;
       color: #475569 !important;
     }
   }
@@ -52,10 +51,12 @@
   h6 {
     @apply text-heading font-bold;
   }
+
   * {
     @apply border-border outline-ring/50;
 
   }
+
   html {
     @apply font-sans;
 
