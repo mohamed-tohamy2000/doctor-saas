@@ -9,7 +9,7 @@ import Registerpage from "../../modules/auth/pages/Registerpage";
 import ForgotPassword from "../../modules/auth/pages/ForgotPassword";
 import ResetPassword from "../../modules/auth/pages/ResetPassword";
 import DoctorDirectory from "../../modules/doctor/pages/DoctorDirectory";
-import ErrorPage from "../../modules/errors/pages/ErrorPage";
+import ErrorPage from "@/modules/errors/pages/ErrorPage";
 import Dashboard from "@/modules/doctor/pages/Dashboard";
 
 export default function RouterApp() {
