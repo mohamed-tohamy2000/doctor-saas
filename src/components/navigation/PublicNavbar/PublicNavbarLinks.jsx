@@ -11,7 +11,7 @@ export const PublicNavbarLinks = () => {
   return (
     <>
       <nav className="flex gap-6 items-center justify-center">
-        {links.map((el, index) => {
+        {links.map((el) => {
           const isActive = location.pathname === el.path;
           return (
             <Link

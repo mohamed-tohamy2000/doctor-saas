@@ -1,4 +1,3 @@
-import React from 'react'
 import img from "../../../assets/4eadf427706cb617bdf1280e0d212fd7f25800d5.png"
 import icomn from "../../../assets/Icon.svg"
 import { ArrowRight } from 'lucide-react'

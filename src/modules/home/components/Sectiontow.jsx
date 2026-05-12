@@ -1,5 +1,4 @@
 import { ArrowRight } from 'lucide-react'
-import React from 'react'
 import Carttow from './Carttow'
 import doctor from '../../../assets/doctor.png'
 import doctor1 from '../../../assets/doctor1.png'

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Steps({steps}) {
   return (
     <>
@@ -16,7 +14,7 @@ export default function Steps({steps}) {
                   <Icon size={30} strokeWidth={2.4} />
                 </div>
                 <h2 className='mt-5 text-[20px] font-semibold text-[#171D1C]'>{step.title}</h2>
-                <p className='mt-2 max-w-[300px] text-sm font-normal leading-6 text-[#3D4947]'>
+                <p className='mt-2 max-w-75 text-sm font-normal leading-6 text-[#3D4947]'>
                   {step.description}
                 </p>
               </div>

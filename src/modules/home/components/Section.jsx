@@ -1,4 +1,3 @@
-import React from 'react'
 import Carte from './Carte'
 import icon from "../../../assets/Icon5.svg"
 import icon2 from "../../../assets/Container.svg"

@@ -1,4 +1,3 @@
-import React from 'react'
 import ConTainer from '../components/ui/Container/ConTainer'
 import HeroSection from '../modules/home/components/HeroSection'
 import Section from '../modules/home/components/Section'

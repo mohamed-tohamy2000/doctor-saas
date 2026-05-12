@@ -1,6 +1,5 @@
-import { BadgeCheck, Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
+import { Mail, MapPin, Phone, SendHorizontal } from "lucide-react";
 import Button from "../components/ui/Button/Button";
-import img from "../assets/ContactPage/sss.png";
 
 export default function ContactPage() {
   return (

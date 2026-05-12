@@ -1,4 +1,3 @@
-import React from 'react'
 import { CalendarDays, Search, UserCheck } from 'lucide-react'
 import Steps from './Steps'
 

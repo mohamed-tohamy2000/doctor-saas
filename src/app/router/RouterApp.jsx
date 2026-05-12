@@ -25,6 +25,7 @@ export default function RouterApp() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="faq" element={<Faq />} />
           <Route path="about" element={<AboutUs />} />
+          
         </Route>
           <Route path="ForgotPassword" element={<ForgotPassword/>} />
           <Route path="ResetPassword" element={<ResetPassword/>} />
